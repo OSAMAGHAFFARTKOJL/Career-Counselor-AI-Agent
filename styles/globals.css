@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 98%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71% 4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71% 4%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217 33% 96%;
+  --secondary-foreground: 224 71% 4%;
+  --muted: 215 27% 94%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 173 80% 40%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 221 83% 53%;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222 47% 7%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217 91% 60%;
+  --primary-foreground: 222 47% 6%;
+  --secondary: 222 32% 13%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 222 32% 13%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 173 80% 40%;
+  --accent-foreground: 222 47% 6%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 222 32% 18%;
+  --input: 222 32% 18%;
+  --ring: 217 91% 60%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.12), transparent 30%),
+    radial-gradient(circle at right, rgba(16, 185, 129, 0.08), transparent 25%),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Gill Sans Nova", "Trebuchet MS", Verdana, sans-serif;
+}
+
+.glass {
+  backdrop-filter: blur(20px);
+  background: color-mix(in srgb, hsl(var(--card)) 76%, transparent);
+}
+
+.bg-grid {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.prose-invert {
+  color: inherit;
+}
