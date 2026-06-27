@@ -58,8 +58,3 @@ The interview is model-driven and adaptive:
   - Input: `dreamRole`, optional `resumeText`, `history` turns
   - Output: either `nextQuestion` or `finalReport` with roadmap
 
-## Notes
-
-- No login is required for the new counselor flow.
-- Existing legacy routes are still present in the repo but are not needed for the core demo.
-#
